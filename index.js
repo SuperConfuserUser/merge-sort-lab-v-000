@@ -14,6 +14,10 @@ function merge(firstArr, secondArr) {
   return [...sorted, ...firstArr, ...secondArr];
 }
 
+function mergeSort(arr) {
+  
+}
+
 // function findMinAndRemoveSorted(arr) {
 //   let min = arr[0];
 //   let minIndex = 0;
