@@ -4,6 +4,10 @@ function findMinAndRemoveSorted(arr) {
 
 function merge(firstArr, secondArr) {
   const sorted = [];
+  while(firstArr.length && secondArr.length) {
+    findMinAndRemoveSorted(firstArr);
+    findMinAndRemoveSorted(secondArr);
+  }
   return [findMinAndRemoveSorted(firstArr), findMinAndRemoveSorted(secondArr), firstArr, secondArr];
 }
 
