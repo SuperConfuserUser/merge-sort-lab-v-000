@@ -7,8 +7,14 @@ function merge(firstArr, secondArr) {
   while(firstArr.length && secondArr.length) {
     const firstMin = findMinAndRemoveSorted(firstArr);
     const secondMin = findMinAndRemoveSorted(secondArr);
-    sorted.push(firstMin);
-    sorted.push(secondMin);
+    if (firstMin < secondMin) {
+      sorted.push(firstMin);
+      sorted.push(secondMin);
+    } else {
+      sorted.push(secondMin);
+      sorted.push(firstMin);
+    }
+    
   }
   return [...sorted, ...firstArr, ...secondArr];
 }
