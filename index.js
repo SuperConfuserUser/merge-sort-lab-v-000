@@ -15,7 +15,6 @@ function merge(firstArr, secondArr) {
 }
 
 function mergeSort(arr) {
-  return arr;
   if (arr.length === 1) {
     return arr;
   } else {
