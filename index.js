@@ -2,7 +2,12 @@ function findMinAndRemoveSorted(arr) {
   return arr.shift();
 }
 
-function mergSort(arr) {
+function mergeSort(firstArr, secondArr) {
+  // const sorted = [];
+  // const firstMin = findMinAndRemoveSorted(firstArr);
+  // const secondMin = findMinAndRemoveSorted(secondMin);
+  // sorted.push(firstMin < secondMin ? ...[firstMin, secondMin] : ...[secondMin, firstMin]);
+  
   
 }
 
