@@ -18,7 +18,8 @@ function mergeSort(arr) {
   if (arr.length === 1) {
     return arr;
   } else {
-    const midPoint = arr.length / 2;
+    const midPoint = Math.floor(arr.length / 2);
+    const firstArr = arr.splice()
     return merge(mergeSort())
   }
   
