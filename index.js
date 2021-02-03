@@ -16,8 +16,8 @@ function merge(firstArr, secondArr) {
     }
     merge(firstArr, secondArr);
   }
-    return [...sorted, ...firstArr, ...secondArr];
-  }
+  return [...sorted, ...firstArr, ...secondArr];
+}
 
 // function findMinAndRemoveSorted(arr) {
 //   let min = arr[0];
