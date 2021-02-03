@@ -4,15 +4,16 @@ function findMinAndRemoveSorted(arr) {
 
 function merge(firstArr, secondArr) {
   const sorted = [];
-  if (firstArr.length !== 0 && secondArr.length !== 0) {
+  while (firstArr.length !== 0 && secondArr.length !== 0) {
     const firstMin = findMinAndRemoveSorted(firstArr);
     const secondMin = findMinAndRemoveSorted(secondMin);
     sorted.push(firstMin < secondMin 
       ? ...[firstMin, secondMin] 
       : ...[secondMin, firstMin]);
-    }
-    return [...sorted, ...firstArr, ...secondArr];
+    merge(firstArr, secondArr);
   }
+    return [...sorted, ...firstArr, ...secondArr];
+}
 
 // function findMinAndRemoveSorted(arr) {
 //   let min = arr[0];
