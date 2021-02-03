@@ -19,10 +19,10 @@ function mergeSort(arr) {
     return arr;
   } else {
     const midPoint = Math.floor(arr.length / 2);
-    const firstArr = arr.splice()
-    return merge(mergeSort())
+    const firstArr = arr.slice(0, midPoint);
+    const secondArr = arr.slice(midPoint + 1, arr.length - 1);
+    return merge(mergeSort(firstArr, secondArr));
   }
-  
 }
 
 // function findMinAndRemoveSorted(arr) {
