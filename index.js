@@ -1,4 +1,10 @@
+function findMinAndRemoveSorted(arr) {
+  
+}
 
+function mergSort(arr) {
+  
+}
 
 // function findMinAndRemoveSorted(arr) {
 //   let min = arr[0];
