@@ -8,8 +8,7 @@ function merge(firstArr, secondArr) {
     if (firstArr[0] < secondArr[0]) {
       sorted.push(findMinAndRemoveSorted(firstArr));
     } else {
-      sorted.push(secondMin);
-      
+      sorted.push(findMinAndRemoveSorted(secondArr));
     }
     
   }
