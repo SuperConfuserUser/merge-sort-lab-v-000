@@ -10,7 +10,7 @@ function merge(firstArr, secondArr) {
     sorted.push(firstMin);
     sorted.push(secondMin);
   }
-  return [...sorted, ...firstArr, ...secondArr];
+  return [ ...firstArr, ...secondArr];
 }
 
 // function findMinAndRemoveSorted(arr) {
