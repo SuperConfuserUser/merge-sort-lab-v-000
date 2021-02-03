@@ -22,7 +22,7 @@ function mergeSort(arr) {
     const midPoint = Math.floor(arr.length / 2);
     const firstArr = arr.slice(0, midPoint);
     const secondArr = arr.slice(midPoint, arr.length);
-    return mergeSort(merge(firstArr, secondArr));
+    return merge(mergeSort(firstArr), mergeSort(secondArr));
   }
 }
 
