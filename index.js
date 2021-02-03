@@ -15,6 +15,12 @@ function merge(firstArr, secondArr) {
 }
 
 function mergeSort(arr) {
+  if (arr.length === 1) {
+    return arr;
+  } else {
+    const midPoint = arr.length / 2;
+    return merge(mergeSort())
+  }
   
 }
 
